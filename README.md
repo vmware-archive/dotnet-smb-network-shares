@@ -3,13 +3,13 @@ An example Steeltoe solution for consuming SMB shared network resources in a .NE
 
 The solution has 2 projects within...
 
-###NET-core2_1-win-network-smb-share
+### NET-core2_1-win-network-smb-share
 This is a .NET application written in .NET core, targeting the .NET framework, running on PASW (Windows Server). If you look in the NET-core2_1-win-network-smb-share.csproj file, you see how this combination is achieved.
 
 Also have a look at the manifest.yml to see how the app is deployed on PAS.
 
-###NET-framework4_6_1-win-network-smb-share
+### NET-framework4_6_1-win-network-smb-share
 This is a .NET application written in .NET framework, running on PASW. Similar to the other project, the .cspoj and manifest will tell the story.
 
-###Scripts
+### Scripts
 There are the powershell scripts to set up an example network share and to create the appropriate bindable services on PAS.
