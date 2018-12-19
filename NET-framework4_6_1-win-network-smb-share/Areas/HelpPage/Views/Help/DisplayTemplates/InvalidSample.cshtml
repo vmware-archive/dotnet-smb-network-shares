@@ -1,0 +1,13 @@
+@using NET_framework4_6_1_win_network_smb_share.Areas.HelpPage
+@model InvalidSample
+
+@if (HttpContext.Current.IsDebuggingEnabled)
+{
+    <div class="warning-message-container">
+        <p>@Model.ErrorMessage</p>
+    </div>
+}
+else
+{
+    <p>Sample not available.</p>
+}

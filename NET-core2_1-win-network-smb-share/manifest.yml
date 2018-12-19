@@ -1,0 +1,12 @@
+---
+applications:
+- name: network-smb-share-framework4_6
+  instances: 1
+  memory: 512M
+  disk_quota: 512M
+  buildpack: binary_buildpack
+  stack: windows2016
+  services:
+    - test-network-share
+    - network-address
+  command: "cmd /c NET-framework4_6_1-network-smb-share --server.urls=http://0.0.0.0:%PORT%"
