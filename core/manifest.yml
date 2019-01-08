@@ -1,12 +1,13 @@
 ---
 applications:
-- name: network-smb-share-framework4_6
+- name: network-smb-share-core
   instances: 1
   memory: 512M
   disk_quota: 512M
+  path: bin/Release/netcoreapp2.1/win-x64/
   buildpack: binary_buildpack
   stack: windows2016
   services:
     - test-network-share
     - network-address
-  command: "cmd /c NET-framework4_6_1-network-smb-share --server.urls=http://0.0.0.0:%PORT%"
+  command: "cmd /c NET-core2_1-win-network-smb-share.exe --server.urls=http://0.0.0.0:%PORT%"

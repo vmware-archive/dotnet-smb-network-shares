@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET-core2_1-win-network-smb-share", "NET-core2_1-win-network-smb-share\NET-core2_1-win-network-smb-share.csproj", "{06560906-EE4A-4395-ABA2-D7C3A297CE39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "core", "core\NetCore21SmbShare.csproj", "{06560906-EE4A-4395-ABA2-D7C3A297CE39}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A7C3807F-E170-44B4-A000-41061D6F7760}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A7C3
 		scripts\setup-env.ps1 = scripts\setup-env.ps1
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET-framework4_6_1-win-network-smb-share", "NET-framework4_6_1-win-network-smb-share\NET-framework4_6_1-win-network-smb-share.csproj", "{817D1DE0-E147-4370-AD50-F568C933FEC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "framework", "framework\NET-framework4_6_1-win-network-smb-share.csproj", "{817D1DE0-E147-4370-AD50-F568C933FEC1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9AC4EC5E-ED72-4B07-9089-D662BCBF9D5E}"
 	ProjectSection(SolutionItems) = preProject

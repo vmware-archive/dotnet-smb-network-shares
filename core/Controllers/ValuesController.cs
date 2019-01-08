@@ -9,7 +9,7 @@ using Steeltoe.Extensions.Configuration.CloudFoundry;
 using Steeltoe.Common.Net;
 using System.IO;
 
-namespace NET_framework4_6_1_network_smb_share.Controllers
+namespace NetCore21SmbShare.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

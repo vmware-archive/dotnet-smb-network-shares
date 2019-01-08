@@ -9,6 +9,7 @@ $serviceInstanceName = "test-network-share"
 $writeUser = "shareWriteUser"
 $password = "thisIs1Pass!"
 
+
 $shareNetworkAddress = "\\\\34.205.85.74\\test_network_share"
 
 $serviceTags = [string]::Format('{0},test-smb-share',$serviceInstanceName) #comma delimited

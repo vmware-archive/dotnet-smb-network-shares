@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Steeltoe.Extensions.Configuration.CloudFoundry;
 
-namespace NET_framework4_6_1_network_smb_share
+namespace NetCore21SmbShare
 {
     public class Startup
     {

@@ -27,4 +27,4 @@ New-SmbShare -Name $shareName `
   -ReadAccess "Everyone", "Guests" `
   -FullAccess $writeUser
 
-#echo "-----> Share address: \\$Env:COMPUTERNAME\$shareName"
+echo "-----> Share address: \\$Env:COMPUTERNAME\$shareName"
