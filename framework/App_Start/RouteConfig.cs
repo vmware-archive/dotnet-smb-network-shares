@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace NET_framework4_6_1_win_network_smb_share
+namespace Net461SmbShare
 {
     public class RouteConfig
     {

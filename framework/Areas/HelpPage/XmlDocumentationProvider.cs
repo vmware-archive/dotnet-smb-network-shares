@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using NET_framework4_6_1_win_network_smb_share.Areas.HelpPage.ModelDescriptions;
+using Net461SmbShare.Areas.HelpPage.ModelDescriptions;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage
+namespace Net461SmbShare.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

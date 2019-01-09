@@ -13,7 +13,7 @@ using System.Web.Http.Description;
 using System.Xml.Linq;
 using Newtonsoft.Json;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage
+namespace Net461SmbShare.Areas.HelpPage
 {
     /// <summary>
     /// This class will generate the samples for the help page.

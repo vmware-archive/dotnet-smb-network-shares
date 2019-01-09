@@ -1,6 +1,6 @@
 using System;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage.ModelDescriptions
+namespace Net461SmbShare.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

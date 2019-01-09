@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace NET_framework4_6_1_win_network_smb_share
+namespace Net461SmbShare
 {
     public static class WebApiConfig
     {

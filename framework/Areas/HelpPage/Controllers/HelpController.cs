@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using NET_framework4_6_1_win_network_smb_share.Areas.HelpPage.ModelDescriptions;
-using NET_framework4_6_1_win_network_smb_share.Areas.HelpPage.Models;
+using Net461SmbShare.Areas.HelpPage.ModelDescriptions;
+using Net461SmbShare.Areas.HelpPage.Models;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage.Controllers
+namespace Net461SmbShare.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

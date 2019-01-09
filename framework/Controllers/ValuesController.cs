@@ -8,7 +8,7 @@ using Steeltoe.Extensions.Configuration.CloudFoundry;
 using Steeltoe.Common.Net;
 using System.IO;
 
-namespace NET_framework4_6_1_win_network_smb_share.Controllers
+namespace Net461SmbShare.Controllers
 {
     public class ValuesController : ApiController
     {
@@ -87,27 +87,5 @@ namespace NET_framework4_6_1_win_network_smb_share.Controllers
 
             return null;
         }
-        /*
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
-        }
-        */
     }
 }

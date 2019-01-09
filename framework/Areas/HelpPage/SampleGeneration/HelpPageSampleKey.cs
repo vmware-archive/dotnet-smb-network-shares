@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Net.Http.Headers;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage
+namespace Net461SmbShare.Areas.HelpPage
 {
     /// <summary>
     /// This is used to identify the place where the sample should be applied.

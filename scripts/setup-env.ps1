@@ -11,15 +11,15 @@ New-LocalUser $writeUser `
 -FullName "NetworkFull Write" `
 -Description "A write account to test network shared"
 
-echo "-----> Created user accounts"
+Write-Host "-----> Created user accounts"
 
 #Add accounts to users group
 Add-LocalGroupMember -Group "Users" -Member $writeUser
-echo "-----> Added to group"
+Write-Host "-----> Added to group"
 
 #Create folders to share
 New-Item -ItemType directory -Path $folderPath 
-echo "-----> Created folder"
+Write-Host "-----> Created folder"
 
 #Share the folders, Users group gets read access
 New-SmbShare -Name $shareName `
@@ -27,4 +27,4 @@ New-SmbShare -Name $shareName `
   -ReadAccess "Everyone", "Guests" `
   -FullAccess $writeUser
 
-echo "-----> Share address: \\$Env:COMPUTERNAME\$shareName"
+Write-Host "-----> Share address: \\$Env:COMPUTERNAME\$shareName"

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.Net;
@@ -46,18 +45,19 @@ namespace NetCore21SmbShare.Controllers
         {
             string destFilePath = _shareFolderAddress + @"\the-pivotal-story-copy.pdf";
             string sourceFilePath = @".\the-pivotal-story.pdf";
-            
+
             //Using the Steeltoe.Common.Net package, which uses WNetUseConnection
             //     we authenticate ouselves and then copy the file
             BadRequestObjectResult badRequestObj;
 
-            using (WindowsNetworkFileShare networkPath = new WindowsNetworkFileShare(_shareFolderAddress, _shareCredential)) {
+            using (WindowsNetworkFileShare networkPath = new WindowsNetworkFileShare(_shareFolderAddress, _shareCredential))
+            {
                 badRequestObj = copyFileToNetworkShare(sourceFilePath, destFilePath);
             }
 
             if (badRequestObj != null)
                 return badRequestObj;
-            
+
             return "Yeah! Your file got copied and validated.";
         }
 
@@ -73,15 +73,24 @@ namespace NetCore21SmbShare.Controllers
         private BadRequestObjectResult copyFileToNetworkShare(string sourceFilePath, string destFileAddress)
         {
             //copy the file to a shared SMB network drive
-            try {
-                System.IO.File.Copy(sourceFilePath, destFileAddress,true);
-            } catch (UnauthorizedAccessException) {
+            try
+            {
+                System.IO.File.Copy(sourceFilePath, destFileAddress, true);
+            }
+            catch (UnauthorizedAccessException)
+            {
                 return BadRequest("You are not authorized to do this.");
-            } catch (FileNotFoundException) {
+            }
+            catch (FileNotFoundException)
+            {
                 return BadRequest("The file was not found");
-            } catch (IOException ioex) {
+            }
+            catch (IOException ioex)
+            {
                 return BadRequest("IO exception occurred - " + ioex.Message);
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 return BadRequest("General exception occurred - " + ex.Message);
             }
 
@@ -91,29 +100,5 @@ namespace NetCore21SmbShare.Controllers
 
             return null;
         }
-        // GET api/values/5
-        /* [HttpGet("{id}")]
-         public ActionResult<string> Get(int id)
-         {
-             return "value";
-         }
-
-         // POST api/values
-         [HttpPost]
-         public void Post([FromBody] string value)
-         {
-         }
-
-         // PUT api/values/5
-         [HttpPut("{id}")]
-         public void Put(int id, [FromBody] string value)
-         {
-         }
-
-         // DELETE api/values/5
-         [HttpDelete("{id}")]
-         public void Delete(int id)
-         {
-         }*/
     }
 }

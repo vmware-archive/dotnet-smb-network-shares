@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage.ModelDescriptions
+namespace Net461SmbShare.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

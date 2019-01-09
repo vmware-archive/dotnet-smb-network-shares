@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage
+namespace Net461SmbShare.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

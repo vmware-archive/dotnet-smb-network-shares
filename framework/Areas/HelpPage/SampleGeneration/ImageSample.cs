@@ -1,6 +1,6 @@
 using System;
 
-namespace NET_framework4_6_1_win_network_smb_share.Areas.HelpPage
+namespace Net461SmbShare.Areas.HelpPage
 {
     /// <summary>
     /// This represents an image sample on the help page. There's a display template named ImageSample associated with this class.

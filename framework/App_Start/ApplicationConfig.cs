@@ -4,7 +4,7 @@ using Steeltoe.Extensions.Configuration.CloudFoundry;
 using System;
 using System.IO;
 
-namespace NET_framework4_6_1_win_network_smb_share
+namespace Net461SmbShare
 {
     public class ApplicationConfig
     {
